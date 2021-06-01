@@ -83,7 +83,6 @@ body {
 .address-contact-link:hover,
 .address-contact-link:focus {
   color: var(--accent-color);
-  transition: var(--animation);
 }
 .hero {
   max-width: 1600px;
@@ -221,7 +220,6 @@ body {
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--accent-color);
-  transition: var(--animation);
 }
 /* ====== icons contact===== */
 .mail {
@@ -310,7 +308,6 @@ body {
 .project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: var(--animation);
 }
 .project-heading-content {
   padding-top: 20px;
@@ -362,7 +359,6 @@ body {
 .modal-btn:hover,
 .modal-btn:focus {
   color: var(--logo-color);
-  transition: var(--animation);
 }
 .filter-options {
   justify-content: center;
@@ -385,7 +381,6 @@ body {
   color: var(--background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: var(--animation);
 }
 .filter-item {
   font-family: inherit;
@@ -578,7 +573,6 @@ body {
 .link-social:focus {
   background-color: var(--accent-color);
   fill: var(--body-background-color);
-  transition: var(--animation);
 }
 /*=========end team============*/
 /*========section-clients======*/
@@ -683,7 +677,9 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: var(--white-contacts-color);
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
