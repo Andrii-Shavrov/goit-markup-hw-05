@@ -186,6 +186,10 @@ body {
   line-height: 1.15;
   letter-spacing: 0.02em;
   color: var(--logo-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact {
   margin-left: auto;
@@ -204,7 +208,12 @@ body {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+
   color: var(--text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contact-link:hover,
 .header-contact-link:focus {
@@ -218,7 +227,7 @@ body {
   fill: currentColor;
 }
 
-.tel {
+.phone {
   display: inline-block;
   margin-right: 10px;
   fill: currentColor;
@@ -326,14 +335,20 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   color: var(--body-background-color);
   background: var(--accent-color);
   cursor: pointer;
+
   display: inline-block;
   padding: 10px 32px;
   border: transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
