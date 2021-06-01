@@ -136,6 +136,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 70px;
+
+  display: inline-block;
+
   animation-duration: 2000ms;
   animation-iteration-count: 2;
 }
@@ -298,8 +301,13 @@ body {
   width: calc((100% - 90px) / 3);
   margin-top: 30px;
   margin-left: 30px;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-item:hover {
+.project-item:hover,
+.project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: var(--animation);
@@ -398,6 +406,10 @@ body {
   padding-left: 22px;
   padding-right: 22px;
   cursor: pointer;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*============end hero=========*/
@@ -556,6 +568,10 @@ body {
 
   fill: #afb1b8;
   background-color: transparent;
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social:hover,
@@ -596,14 +612,15 @@ body {
   border-radius: 4px;
 
   fill: #afb1b8;
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-clients:hover,
 .icon-clients:focus {
-  color: var(--accent-color);
   border-color: var(--accent-color);
-  transition-property: color, border-color;
   fill: var(--accent-color);
-  transition: var(--animation);
 }
 /*==========footer=============*/
 .footer {
@@ -642,6 +659,14 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--body-background-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-link-map:hover,
+.address-link-map:focus {
+  color: var(--accent-color);
 }
 .address-list-item {
   display: inline-block;
@@ -659,6 +684,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-contacts-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social {
   margin-left: 73px;
